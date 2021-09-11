@@ -1,12 +1,8 @@
 *{
     font-family: sans-serif;
 }
-h1,h4,p{
+h1,h4{
     text-align: center;
-}
-button{
-    display: block;
-    margin: 5px auto;
 }
 #remote-container video{
     height: auto;
