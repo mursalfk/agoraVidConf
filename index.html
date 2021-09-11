@@ -3,26 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Video Call Demo</title>
+    <title>Web Client | Agora</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <h1>
-        Video Call Demo<br><small style="font-size: 14pt">Powered by Agora.io</small>
+    <h1 class="title">
+        Video Call Demo
     </h1>
+    <h5 style="font-size: 14pt">Powered by Agora.io</h5>
 
-    <h4>My Feed :</h4>
-    <div id="me"></div>
+    <div class="flexRow">
+        <div class="flexColumn">
+            <h4>My Feed :</h4>
+            <div id="me" class="myFeed"></div>
+        </div>
 
-    <h4>Remote Feeds :</h4>
-    <div id="remote-container">
-
+        <div class="flexColumn mb-20">
+            <h4>Remote Feeds :</h4>
+            <div id="remote-container" class="remoteFeed">
+            </div>
+        </div>
     </div>
-    <!-- <h4>Canvas :</h4>
-    <div id="canvas-container">
-
-    </div> -->
 
     <script src="./scripts/AgoraRTCSDK-2.4.0.js"></script>
     <script src="./scripts/script.js"></script>

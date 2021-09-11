@@ -1,0 +1,55 @@
+:root{
+    --primary-color: #1e0057;
+    --secondary-color: #4400c3;
+}
+*{
+    font-family: sans-serif;
+}
+h1,h4, h5{
+    text-align: center;
+}
+#remote-container video{
+    height: auto;
+    position: relative !important;
+}
+#me{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+#me video{
+    position: relative !important;
+}
+#remote-container{
+    display: flex;
+}
+
+h4{
+    font-size: 1.5em;
+    color:var(--primary-color);
+}
+
+.flexRow{
+    flex-direction: column;
+    display: flex;
+}
+
+h5{
+    text-indent: 150px;
+    margin-top: -20px;
+    font-size: 12px !important;
+    color:var(--secondary-color);
+}
+
+.myFeed, .remoteFeed{
+    margin: 5px;
+    margin: auto;
+    width: 50% !important;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
