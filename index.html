@@ -9,25 +9,37 @@
 
 <body>
     <h1 class="title">
-        Video Call Demo
+        Video Call Demo <br />
+        <span style="font-size: 14pt">Powered by Agora.io</span> <br />
+        <span class="devTitle" style="font-size: 14pt">Created by: Mursal Furqan</span>
     </h1>
-    <h5 style="font-size: 14pt">Powered by Agora.io</h5>
 
     <div class="flexRow">
         <div class="flexColumn">
             <h4>My Feed :</h4>
-            <div id="me" class="myFeed"></div>
+            <div id="me" class="myFeed feed"></div>
         </div>
 
         <div class="flexColumn mb-20">
             <h4>Remote Feeds :</h4>
-            <div id="remote-container" class="remoteFeed">
+            <div id="remote-container" class="remoteFeed feed">
             </div>
         </div>
     </div>
 
     <script src="./scripts/AgoraRTCSDK-2.4.0.js"></script>
     <script src="./scripts/script.js"></script>
+    <script>
+        document.querySelector('.feed').onmousemove = (e) => {
+
+            const x = e.pageX - e.target.offsetLeft
+            const y = e.pageY - e.target.offsetTop
+
+            e.target.style.setProperty('--x', `${x}px`)
+            e.target.style.setProperty('--y', `${y}px`)
+
+        }
+    </script>
 </body>
 
 </html>

@@ -7,6 +7,17 @@
 }
 h1,h4, h5{
     text-align: center;
+    span{
+        text-indent: 150px;
+        margin-top: -20px;
+        font-size: 12px !important;
+        color:var(--secondary-color);
+    }
+    .devTitle{
+        font-size: 20px;
+        color: var(--primary-color);
+        margin-top: -30px;
+    }
 }
 #remote-container video{
     height: auto;
@@ -46,10 +57,41 @@ h5{
     margin: 5px;
     margin: auto;
     width: 50% !important;
-    border: 2px solid var(--primary-color);
+    border: 5px solid var(--primary-color);
     border-radius: 5px;
 }
 
 .mb-20{
     margin-bottom: 20px;
+}
+
+video{
+    border-radius: 10px;
+    margin: 10px;
+}
+
+body {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: rgb(206, 206, 206);
+}
+
+.feed {
+	--x: 50%;
+	--y: 50%;
+	
+	position: relative;
+	appearance: none;
+	padding: 1em 2em;
+	color: white;
+	// cursor: pointer;
+	outline: none;
+	border-radius: 50px;
+	
+	// The magic
+	border: 4px solid transparent;
+	background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
 }
